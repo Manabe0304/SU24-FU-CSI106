@@ -1,14 +1,14 @@
 // Truy cap ngau nhien
 #include <stdio.h>
-int main() {
+int main(){
     FILE *in;
     char line[256]; //block=1 dong
-    int soDong, dongHienTai=1; //khai bao so dong doc, dong dien tai
+    int soDong, dongHienTai = 1; //khai bao so dong doc, dong dien tai
     printf("Hay nhap vao so dong can doc: ");
     scanf("%d", &soDong);
     //mo file doc ngau nhien
     in = fopen("input.txt", "r");
-    if(in=NULL){ //Kiem tra xem file co ton tai khong
+    if(in == NULL){ //Kiem tra xem file co ton tai khong
         printf("Khong mo duc file input.txt\n");
         return 1;
     }

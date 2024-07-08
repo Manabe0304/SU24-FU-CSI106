@@ -20,3 +20,14 @@ encrypted_text = encrypt(text, shift)
 print("Text da ma hoa: ", encrypted_text)
 decrypted_text = decrypt(encrypted_text, shift)
 print("Text sau khi giai ma: ", decrypted_text)
+
+def xor_cipher(text, key):
+        result += chr(ord(text[i])^ord(key[i%len(len)]))
+        return result
+text = input("Nhap text: ")
+key = int(input("Nhap key: 0 den 255 "))
+chuoi_ma_hoa = xor_cipher(text, key)
+print("Sau khi ma hoa: ", chuoi_ma_hoa)
+chuoi_giai_ma = xor_cipher(text, key)
+print("Sau khi giai ma: ", chuoi_giai_ma)
+

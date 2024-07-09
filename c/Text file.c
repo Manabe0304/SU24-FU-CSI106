@@ -15,7 +15,7 @@ int main(){
         return 1;
     }
     while((ch = fgetc(infile)) != EOF){ //kiem tra neu khong phai cuoi file
-        fputc(ch, outfile); //copy tu input.txt sang utput.txt
+        fputc(ch, outfile); //copy tu input.txt sang output.txt
     }
     fclose(infile); //dong file nguon
     fclose(outfile); //dong file dich
